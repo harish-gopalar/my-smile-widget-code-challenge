@@ -41,3 +41,17 @@ The Smile Widget Company currently sells two types of smile widgets: a Big Widge
 ### Additional Information
 * Please use Django Rest Framework or a Python web framework of your choice to create the endpoint.
 * Just as a general guideline, we've designed this exercise to take less than 4 hours.
+
+### Updated by Harish
+1. Create database and configure the setting.py file.
+
+2. Open the terminal and run the below commands:
+  * `>>> python manage.py makemigrations` # Propagating changes made in the model into the database schema
+  * `>>> python manage.py migrate` # updates the database schema
+  * `>>> python manage.py loaddata 0002_fixtures.json` # load the data into tables
+  * `>>> python manage.py runserver` # run the server
+  
+3. Check the API (http://127.0.0.1:8000/api/get-price) from any API connector by passing below kind of json data 
+  * `{"giftCardCode": "10OFF", "productCode": "big_widget","date": "2018-11-24"}`
+
+
