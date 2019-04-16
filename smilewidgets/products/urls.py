@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
 
-    path('get-price', views.GetPrice, name='get-price'),
+    path('get-price', views.get_price_details, name='get-price'),
 
 ]
